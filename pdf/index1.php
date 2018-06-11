@@ -1,29 +1,29 @@
-<?php
+<?php	
+
 	include_once("conexao.php");
-	
 	$html = '';
-	
 	$gerar_alternativas = [1 => 'a', 2 => 'b', 3 => 'c', 4 => 'd', 5 => 'e'];
 	
-	$consultar_questoes = "SELECT * FROM questoes";
-	
+	$consultar_questoes = "SELECT * FROM questoes order by rand() limit 10";
 	$result_questoes = mysqli_query($conn, $consultar_questoes);
-	
+	$q = 1;
 	while($row = mysqli_fetch_assoc($result_questoes)){
-		$html .= $row['questao'] . "<br>";
+		//$html .= $row['questao'] . "<br>"; $html .= 'Questão '.$id_questao. ')'.$row['questao']."<br>";
 
 			$id_questao = $row['cod_questoes'];
+	
+			$html .= 'Questão '.$q. ') '.$row['questao']."<br>";
 
 			$consultar_alternativas = "SELECT a.alternativas AS alternativa FROM questoesalternativa qa INNER JOIN alternativa a ON qa.cod_alternativa = a.cod_alternativa WHERE qa.cod_questoes = '$id_questao'";
-
+			
+			$q++;
 			$i=1;
 
 			$result_alternativas = mysqli_query($conn, $consultar_alternativas);
-			
 			while($row2 = mysqli_fetch_assoc($result_alternativas)){
 				$html .= $gerar_alternativas[$i++] . ') ' . $row2['alternativa'] . "<br>"; 
 			}
-		$html .= "<br><br>";
+			$html .= "<br><br>";
 	}
 	
 	//referenciar o DomPDF com namespace

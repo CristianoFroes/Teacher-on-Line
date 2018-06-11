@@ -1,0 +1,76 @@
+#menu{    
+  text-align: right;
+  padding: 2px 15px;    
+}
+
+#login{
+  background: rgb(211,240,255);
+}
+
+#cadastro{
+  position: absolute;
+  top: 15%;
+  width: 50%;
+  left: 25%;    
+  padding: 0px 0px 15px;
+}
+
+#grid{  
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 1em;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+body, #donutchart {  	
+	margin: 0;  	
+	padding: 0;  	
+	background: rgb(211,240,255);
+}
+
+form, #donutchart {
+  margin: 0 auto;
+  width: 800px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color:  #D9D9F3;	
+}
+
+#listar {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 1em;
+  background-color: white;
+}	
+
+body, input, select, textarea, button {
+  font-family: serif;
+  font-size: 1em;
+}
+
+#navbarDropdown{
+  color: white;
+}
+
+.css img{
+  width: 40%;
+  height: 40%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#a h2{
+  width: 40%;
+  height: 40%;
+  margin: 0;
+  padding: 0;    
+  color: white;
+  font-family: calibri;
+}

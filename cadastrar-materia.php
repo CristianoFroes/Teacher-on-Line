@@ -4,11 +4,11 @@
 	<form action="index.php?page=salvar-materia&acao=cadastrar" method="POST">
 		<div class="form-group">
 			<label>NOME DA MATERIA</label>
-			<input type="text" name="nome_materia" class="form-control">
+			<input type="text" name="nome_materia" class="form-control" required>
 		</div>
 		<div class="form-group">
 			<label>CARGA HORARIA</label>
-			<input type="text" name="carga_horaria" class="form-control">
+			<input type="text" name="carga_horaria" class="form-control" required>
 		</div>
 		
 		<div class="form group">

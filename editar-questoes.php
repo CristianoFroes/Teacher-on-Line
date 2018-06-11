@@ -54,7 +54,7 @@
 			
 			<div class="form-group">			
 				<label><b>QUESTÃO</b></label>						
-				<input type="text" name="questao" class="form-control" value="<?php print $row["questao"]; ?>">
+				<input type="text" name="questao" class="form-control" value="<?php print $row["questao"]; ?>" required>
 				<input type="hidden" name="cod_questao" value="<?php print $row["cod_questoes"]; ?>"><br>				
 				<label><b>Nível:</b></label>
 				<select name="nivel" required>
@@ -69,7 +69,7 @@
 				<div class="checkbox">
 					<label><b>Alternativa A</b></label>
 					<label><input type="checkbox" id="corretaA" name="corretaA" onclick="<?php print 'value = 1' ;?>">Correta?</label>
-					<input type="text" name="alternativaA" class="form-control" value="<?php print $row['alternativas']; ?>">
+					<input type="text" name="alternativaA" class="form-control" value="<?php print $row['alternativas']; ?>"required>
 					<input type="hidden" name="cod_alternativaA" value="<?php print $row['cod_alternativa']; ?>">			 
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 				<div class="checkbox">
 					<label><b>Alternativa B</b></label>
 					<label><input type="checkbox" id="corretaB" name="corretaB" onclick="<?php print 'value = 1' ;?>">Correta?</label>
-					<input type="text" name="alternativaB" class="form-control" value="<?php ($row = $resultado->fetch_array()); print $row['alternativas']; ?>">
+					<input type="text" name="alternativaB" class="form-control" value="<?php ($row = $resultado->fetch_array()); print $row['alternativas']; ?>"required>
 					<input type="hidden" name="cod_alternativaB" value="<?php print $row['cod_alternativa']; ?>">
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 				<div class="checkbox">
 					<label><b>Alternativa C</b></label>
 					<label><input type="checkbox" id="corretaC" name="corretaC" onclick="<?php print 'value = 1' ;?>">Correta?</label>
-					<input type="text" name="alternativaC" class="form-control" value="<?php ($row = $resultado->fetch_array()); print $row['alternativas']; ?>">
+					<input type="text" name="alternativaC" class="form-control" value="<?php ($row = $resultado->fetch_array()); print $row['alternativas']; ?>"required>
 					<input type="hidden" name="cod_alternativaC" value="<?php print $row['cod_alternativa']; ?>">
 				</div>
 			</div>
@@ -96,7 +96,7 @@
 				<div class="checkbox"
 					<label><b>Alternativa D</b></label> 
 					<label><input type="checkbox" id="corretaD" name="corretaD" onclick="<?php print 'value = 1' ;?>">Correta?</label>
-					<input type="text" name="alternativaD" class="form-control" value="<?php ($row = $resultado->fetch_array()); print $row['alternativas']; ?>">
+					<input type="text" name="alternativaD" class="form-control" value="<?php ($row = $resultado->fetch_array()); print $row['alternativas']; ?>"required>
 					<input type="hidden" name="cod_alternativaD" value="<?php print $row['cod_alternativa']; ?>">
 				</div>
 			</div>

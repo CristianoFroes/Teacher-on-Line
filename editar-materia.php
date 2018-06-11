@@ -15,12 +15,12 @@
 		<form action="index.php?page=salvar-materia&acao=editar&cod_materia=<?php print $row["cod_materia"]; ?>" method="POST">
 			<div class="form-group">
 				<label>NOME DA MATERIA</label>
-				<input type="text" name="nome_materia" class="form-control" value="<?php print $row["nome_materia"]; ?>">
+				<input type="text" name="nome_materia" class="form-control" value="<?php print $row["nome_materia"]; ?>"required>
 			</div>
 			
 			<div class="form-group">
 				<label>CARGA HORÁRIA</label>
-				<input type="text" name="carga_horaria" class="form-control" value="<?php print $row["carga_horaria"]; ?>">
+				<input type="text" name="carga_horaria" class="form-control" value="<?php print $row["carga_horaria"]; ?>"required>
 			</div>
 			
 			<div class="form-group">

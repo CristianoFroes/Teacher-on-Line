@@ -5,7 +5,7 @@
 		<form action="index.php?page=salvar-curso&acao=cadastrar" method="POST">
 			<div class="form-group">
 				<label>NOME DO CURSO</label>
-				<input type="text" name="nome_curso" class="form-control" id="cur">
+				<input type="text" name="nome_curso" class="form-control" id="cur" required>
 			</div>
 			
 			<div class="form-group">

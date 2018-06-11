@@ -15,7 +15,7 @@
 		<form action="index.php?page=salvar-aluno&acao=editar&cod_aluno=<?php print $row["cod_aluno"]; ?>" method="POST">
 			<div class="form-group">
 				<label>NOME DO ALUNO</label>
-				<input type="text" name="nome_aluno" class="form-control" value="<?php print $row["nome_aluno"]; ?>">
+				<input type="text" name="nome_aluno" class="form-control" value="<?php print $row["nome_aluno"]; ?>"required>
 			</div>
 			
 			<div class="form-group">
@@ -27,17 +27,17 @@
 			
 			<div class="form-group">
 				<label>DATA DE NASCIMENTO</label>
-				<input type="date" name="data_nascimento" class="form-control"value="<?php print $row["data_nascimento"]; ?>">
+				<input type="date" name="data_nascimento" class="form-control"value="<?php print $row["data_nascimento"]; ?>"required>
 			</div>
 
 			<div class="form-group">
 				<label>DATA DA MATRICULA</label>
-				<input type="date" name="data_matricula" class="form-control" value="<?php print $row["data_matricula"]; ?>">
+				<input type="date" name="data_matricula" class="form-control" value="<?php print $row["data_matricula"]; ?>"required>
 			</div>
 				
 			<div class="form-group">
 				<label>NÚMERO DO REGISTRO</label>
-				<input type="text" name="registro" class="form-control" value="<?php print $row["registro"]; ?>">
+				<input type="text" name="registro" class="form-control" value="<?php print $row["registro"]; ?>"required>
 			</div>
 				
 			<div class="form-group" value="<?php print $row["cod_curso"]; ?>">

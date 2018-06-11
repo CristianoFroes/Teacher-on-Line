@@ -13,7 +13,7 @@
 		<form action="index.php?page=salvar-curso&acao=editar&cod_curso=<?php print $row["cod_curso"]; ?>" method="POST">
 			<div class="form-group">
 				<label>NOME DO CURSO</label>
-				<input type="text" name="nome_curso" class="form-control" value="<?php print $row["nome_curso"]; ?>">
+				<input type="text" name="nome_curso" class="form-control" value="<?php print $row["nome_curso"]; ?>"required>
 			</div>
 			
 			<div class="form-group">

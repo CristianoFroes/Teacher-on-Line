@@ -43,7 +43,7 @@
 			
 			<div class="form-group">			
 				<label><b>QUESTÃO</b></label>						
-				<input type="text" name="questao" class="form-control"><br>				
+				<input type="text" name="questao" class="form-control" required><br>				
 				<label><b>Nível:</b></label>
 				<select name="nivel" required>
 					<option value="">Selecione</option>
@@ -57,7 +57,7 @@
 				<div class="checkbox">
 					<label><b>Alternativa A</b></label>
 					<label><input type="checkbox" id="corretaA" name="corretaA" onclick="<?php print 'value = 1' ;?>">Correta?</label>
-					<input type="text" name="alternativa[]" class="form-control">			 
+					<input type="text" name="alternativa[]" class="form-control" required>			 
 				</div>
 			</div>
 			
@@ -65,7 +65,7 @@
 				<div class="checkbox">
 					<label><b>Alternativa B</b></label>
 					<label><input type="checkbox" id="corretaB" name="corretaB" onclick="<?php print 'value = 1' ;?>">Correta?</label>
-					<input type="text" name="alternativa[]" class="form-control">			 
+					<input type="text" name="alternativa[]" class="form-control" required>			 
 				</div>
 			</div>
 			
@@ -73,7 +73,7 @@
 				<div class="checkbox">
 					<label><b>Alternativa C</b></label>
 					<label><input type="checkbox" id="corretaC" name="corretaC" onclick="<?php print 'value = 1' ;?>">Correta?</label>
-					<input type="text" name="alternativa[]" class="form-control">
+					<input type="text" name="alternativa[]" class="form-control"required>
 				</div>
 			</div>
 			
@@ -81,7 +81,7 @@
 				<div class="checkbox">
 					<label><b>Alternativa D</b></label> 
 					<label><input type="checkbox" id="corretaD" name="corretaD" onclick="<?php print 'value = 1' ;?>">Correta?</label>
-					<input type="text" name="alternativa[]" class="form-control">
+					<input type="text" name="alternativa[]" class="form-control"required>
 				</div>
 			</div>
 

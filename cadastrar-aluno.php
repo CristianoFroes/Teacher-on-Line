@@ -5,7 +5,7 @@
 		<form action="index.php?page=salvar-aluno&acao=cadastrar" method="POST">					
 			<div class="form-group">
 				<label>NOME DO ALUNO</label>
-				<input type="text" name="nome_aluno" class="form-control">
+				<input type="text" name="nome_aluno" class="form-control" required>
 			</div>
 			
 			<div class="form-group">
@@ -16,17 +16,17 @@
 			
 			<div class="form-group">
 				<label>DATA DE NASCIMENTO</label>
-				<input type="date" name="data_nascimento" class="form-control">
+				<input type="date" name="data_nascimento" class="form-control" required>
 			</div>
 			
 			<div class="form-group">
 				<label>DATA DA MATRICULA</label>
-				<input type="date" name="data_matricula" class="form-control">
+				<input type="date" name="data_matricula" class="form-control" required>
 			</div>
 
 			<div class="form-group">
 				<label>NÚMERO DO REGISTRO</label>
-				<input type="text" name="registro" class="form-control">
+				<input type="text" name="registro" class="form-control" required>
 			</div>
 
 			<div class="form-group">
